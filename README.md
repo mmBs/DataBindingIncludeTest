@@ -2,6 +2,8 @@
 
 This is a project documenting an [issue 68198305](https://issuetracker.google.com/68198305) which I raised for Android Studio 3.0.0-RC2.
 
+![bug](art/bug.png)
+
 ## Short description
 
 When using data binding and `<include>` (the bug was present in 3.0.0 preview, 3.0.0-RC1 and 3.0.0-RC2), Android Studio doesn't see generated methods. It gives an error (in that particular case) that "Cannot resolve method 'setText(java.lang.String)" despite the fact the project builds successfully and it's fully operational.    
@@ -17,5 +19,3 @@ Layout hierarchy in the sample project is:
 1. Open this project in Android Studio 3.0.0-RC2
 2. Build it.
 3. Go to `MainActivity` and check line 19: `binding.contentMain.documentId.setText("Check this out");`
-
-
